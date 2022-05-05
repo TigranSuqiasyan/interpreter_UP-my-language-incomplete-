@@ -1,0 +1,47 @@
+THIS IS THE DOCUMENTATION OF INTERPRETER
+
+THE HYPOTHETICAL LANGUAGE IS CALLED "UP"
+
+Here is an example of code written in UP language:
+
+number x
+number y
+assign 1 to y
+read x
+as long as x > 1
+	assign x * y to y
+	assign x - 1 to x
+
+This is the implementation of the factorial problem.
+The program reads the input from console,
+executes its factorial, the outputs on console.
+
+There are 8 data types in the UP language:
+1. number (stores integral and floating point numbers)
+2. symbol (stores characters)
+3. bool (stores boolean values)
+4. line (stores strings)
+
+5. ->number (pointer to number)
+6. ->symbol (pointer to symbol)
+7. ->bool (pointer to bool)
+8. ->line (pointer to line)
+
+the program reads the content from a file which MUST have
+.up extension. then it separates the code into execution blocks.
+
+There are 3 types of execution blocks in the UP language:
+
+1. SYMPLE: commands, which do not have any scope
+2. CONDITIONAL: commands in the body of "if" and the conditional expression
+3. ITERATIVE: command in the body of "as long as" and the iterative expression
+
+Then each block is executed as a sequence of commands.
+By the way, execution flow differs in blocks:
+SIMPLE blocks are executed once
+CONDITIONAL blocks are executed once and only if the result of the conditional expression is evaluated to true
+ITERATIVE blocks are executed as long as the iterative conditional expression is evaluated to true
+
+The commands situated in CONDITIONAL and ITERATIVE blocks must start after a HORIZONTAL TAB
+
+At the moment the program of iterator is incomplete but it is a promising project to look forward...!!!  :)

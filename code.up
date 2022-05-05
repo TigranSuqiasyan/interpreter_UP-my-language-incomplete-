@@ -1,0 +1,11 @@
+number x
+number y
+assign 1 to y
+read x
+as long as x > 1
+	assign y * x to y
+	assign y - 1 to y
+write y
+assign 4 to y
+if y > 1
+	write 8
